@@ -1,0 +1,35 @@
+Badanie algorytmów zastępowania stron. 
+
+Należy samodzielnie sformułować założenia symulacji: 
+- rozmiar pamięci wirtualnej (ilość stron). 
+- rozmiar pamięci fizycznej (ilość ramek). 
+- długość (powinna być znaczna - min. 1000) i sposób generowania ciągu odwołań do stron (koniecznie uwzględnić zasadę lokalności odwołań).
+
+Działanie programu: 
+- wygenerować losowy ciąg n odwołań do stron 
+- dla wygenerowanego ciągu podać liczbę błędów strony dla różnych algorytmów zastępowania stron: 
+
+1. FIFO (usuwamy stronę najdłużej przebywającą w pamięci fizycznej) 
+2. OPT (optymalny - usuwamy stronę, która nie będzie najdłużej używana) 
+3. LRU (usuwamy stronę, do której najdłużej nie nastąpiło odwołanie) 
+4. aproksymowany LRU (wiadomo) 
+5. RAND (usuwamy losowo wybraną stronę) 
+
+- symulacje przeprowadzić (na tym samym ciągu testowym) dla różnej liczby ramek (np. kilku (3, 5, 10?)  wartości podanych przez użytkownika)
+Zakres materiału: wszystko o pamięci wirtualnej (z wykładu).
+
+Założyć, że:
+- w systemie działa pewna ilość (rzędu ~10) procesów.
+- każdy korzysta z własnego zbioru stron (zas. lokalności wciąż obowiązuje).
+- globalny ciąg odwołań jest wynikiem połączenia sekwencji odwołań generowanych przez poszczególne procesy (każdy generuje ich wiele, nie jedną)
+- każdemu system przydziela określoną liczbę ramek. na podstawie następujących metod:
+
+1. Przydział proporcjonalny
+2. Przydział równy
+3. Sterowanie częstością błędów strony
+4. Model strefowy.
+
+- zastępowanie stron odbywa się zgodnie z LRU.
+
+Jak strategie przydziału ramek wpływają na wyniki (ilość błędów strony - globalnie, dla każdego procesu)? 
+Program powinien wypisywać na ekranie przyjęte założenia symulacji. Mile widziana możliwość ich zmiany przez użytkownika.
