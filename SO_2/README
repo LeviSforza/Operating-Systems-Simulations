@@ -1,5 +1,6 @@
-# Symulacja algorytmów planowania dostępu do dysku.
--
+Symulacja algorytmów planowania dostępu do dysku.
+
+
 * 'Dysk' to w naszym przypadku liniowo uporządkowany ciąg bloków o nr od 1 do MAX.
 * Kryterium oceny algorytmów będzie suma przemieszczeń głowicy dysku, jak wiadomo proporcjonalna do czasu realizacji zleceń. 
 * 1.Sprawdzić algorytmy FCFS, SSTF, SCAN i C-SCAN.
